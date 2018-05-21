@@ -14,6 +14,7 @@ if (isset($_POST['log_in_button'])){
         $result = $registerAccount->loginAccount($loginUsername, $loginPassword);
 
         if ($result){
+             $_SESSION['userLoggedIn'] = $loginUsername;
             header("Location: index.php");
         }
     //Login function

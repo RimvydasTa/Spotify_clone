@@ -37,6 +37,7 @@ if (isset($_POST['register_button'])){
         );
 
    if ($wasSuccessful){
+       $_SESSION['userLoggedIn'] = $registerUsername;
        header('Location: index.php');
    }
 
