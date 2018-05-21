@@ -6,11 +6,11 @@
  * Time: 18:50
  */
 
-function sanitizeTextInput ($input){
-    $input = strip_tags($input);
-    $input = str_replace(" ", "", $input);
+function sanitizeTextInput ($inputText){
+    $inputText = strip_tags($inputText);
+    $inputText = str_replace(" ", "", $inputText);
 
-    return $input;
+    return $inputText;
 }
 
 function sanitizeNameInput($name){
@@ -25,4 +25,10 @@ function sanitizePassword ($password){
     $password = strip_tags($password);
 
     return $password;
+}
+
+function getInputValue($inputName){
+    if (isset($_POST[$inputName])){
+        echo $_POST[$inputName];
+    }
 }

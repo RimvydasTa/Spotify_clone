@@ -8,5 +8,13 @@
 
 if (isset($_POST['log_in_button'])){
     //Log in button was pressed
+    $loginUsername = $_POST['loginUsername'];
+    $loginPassword = $_POST['loginPassword'];
 
+        $result = $registerAccount->loginAccount($loginUsername, $loginPassword);
+
+        if ($result){
+            header("Location: index.php");
+        }
+    //Login function
 }

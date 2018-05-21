@@ -9,11 +9,30 @@
 class Account
 {
     private $errorArray;
-    public function __construct()
+    private $connection;
+    public function __construct($connection)
     {
+        $this->connection = $connection;
         $this->errorArray = array();
     }
 
+    /**
+     * @return mixed
+     */
+    public function loginAccount($loginUsername, $loginPassword)
+    {
+        $loginPassword = md5($loginPassword);
+
+        $loginQuery = mysqli_query($this->connection, "select * from users where users.password = '$loginPassword'");
+
+        if(mysqli_num_rows($loginQuery) == 1){
+            return true;
+        }else {
+            array_push($this->errorArray, Constants::$loginFailed);
+            return false;
+        }
+
+    }
         public function registerAccount($username, $firstname, $lastname, $email, $confirmEmail, $password, $confirmPassword){
             $this->validateUsername($username);
             $this->validateName($firstname, 'First');
@@ -23,12 +42,36 @@ class Account
 
             if (empty($this->errorArray)){
                 //Insert into db
-                return true;
+
+                return $this->insertUserDetails($username, $firstname, $lastname, $email, $password);
             }else {
+
                 return false;
             }
         }
 
+        private  function insertUserDetails($username, $firstname, $lastname, $email,  $password){
+            $encryptedPassword = md5($password);
+            $profilePic = "assets/images/profile_pics/head_emerald.png";
+            $date = date("Y-m-d");
+
+            $result = mysqli_query($this->connection,
+                "insert into users values (null, 
+                '$username', 
+                '$firstname', 
+                '$lastname', 
+                '$encryptedPassword', 
+                '$date', 
+                '$profilePic', 
+                '$email')
+                ");
+
+            if (!$result){
+                mysqli_errno($this->connection);
+            }
+
+            return $result;
+        }
         public function getError($error){
             if (!in_array($error, $this->errorArray)){
                 $error = "";
@@ -41,7 +84,10 @@ class Account
                 array_push($this->errorArray, Constants::$usernameLength);
                 return;
             }
-            //TODO: check if username exists
+            $checkUsernameQuery  = mysqli_query($this->connection, "select users.username from users where users.username = '$username' " );
+            if (mysqli_num_rows($checkUsernameQuery) != 0){
+                array_push($this->errorArray, Constants::$usernameExists);
+            }
         }
 
         //Second param string for first or last name
@@ -64,6 +110,10 @@ class Account
             }
 
             //TODO: Check if username already in use
+            $checkEmailQuery  = mysqli_query($this->connection, "select users.email from users where users.email = '$email' " );
+            if (mysqli_num_rows($checkEmailQuery) != 0){
+                array_push($this->errorArray, Constants::$emailExists);
+            }
         }
 
         private function validatePassword ($password, $confirmPassword){
