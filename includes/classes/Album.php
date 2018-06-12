@@ -24,4 +24,23 @@ class Album extends Helper
 
         return $artistArr;
     }
+
+    public function getNumberOfSongs ($db, $albumArtistId){
+        $numSongsSql = "select id from" . " $db " . "where album = '$albumArtistId'";
+        $numSongsQuery = $this->queryDb($this->connection, $numSongsSql);
+        return mysqli_num_rows($numSongsQuery);
+    }
+
+    public function getSongIds(){
+        $songIdsSql = "select id from songs where album = '$this->id' order by albumOrder asc";
+        $songIdQuery = $this->queryDb($this->connection, $songIdsSql);
+        $songIdArray = [];
+
+        while ($row = mysqli_fetch_array($songIdQuery)){
+            array_push($songIdArray, $row['id']);
+        }
+
+        return $songIdArray;
+
+    }
 }

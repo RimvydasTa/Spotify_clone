@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0cf8e562-93db-4bdc-8f4e-80f7c6d5c853" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/mysql/slotify.sql" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/slotify.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/classes/Song.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/album.php" beforeDir="false" afterPath="$PROJECT_DIR$/album.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/classes/Album.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/classes/Album.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/classes/Artist.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/classes/Artist.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/classes/Helper.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/classes/Helper.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -64,38 +71,47 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="album.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="album.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/album.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="423">
-              <caret line="28" column="59" lean-forward="true" selection-start-line="28" selection-start-column="59" selection-end-line="28" selection-end-column="59" />
+            <state relative-caret-position="285">
+              <caret line="53" column="74" selection-start-line="53" selection-start-column="74" selection-end-line="53" selection-end-column="74" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="songs" pinned="false" current-in-tab="false">
-        <entry file="das://dacaeb6f-69cb-45c6-b99f-27e4d4cf5784/schema/slotify/table/songs">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/css/style.css">
+      <file leaf-file-name="Song.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/includes/classes/Song.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="445">
-              <caret line="252" column="22" selection-start-line="252" selection-start-column="22" selection-end-line="252" selection-end-column="22" />
+            <state relative-caret-position="414">
+              <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="slotify.sql" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/mysql/slotify.sql">
+      <file leaf-file-name="Helper.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/includes/classes/Helper.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="7" column="22" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+            <state relative-caret-position="194">
+              <caret line="22" column="20" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/includes/header.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="69">
+              <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Album.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/includes/classes/Album.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="261">
+              <caret line="34" column="89" selection-start-line="34" selection-start-column="89" selection-end-line="34" selection-end-column="89" />
             </state>
           </provider>
         </entry>
@@ -132,13 +148,14 @@
         <option value="$PROJECT_DIR$/includes/navBarContainer.php" />
         <option value="$PROJECT_DIR$/includes/nowPlayingBarContainer.php" />
         <option value="$PROJECT_DIR$/includes/footer.php" />
-        <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/includes/classes/Helper.php" />
-        <option value="$PROJECT_DIR$/includes/classes/Artist.php" />
-        <option value="$PROJECT_DIR$/includes/classes/Album.php" />
-        <option value="$PROJECT_DIR$/includes/header.php" />
-        <option value="$PROJECT_DIR$/album.php" />
         <option value="$PROJECT_DIR$/assets/css/style.css" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/includes/classes/Artist.php" />
+        <option value="$PROJECT_DIR$/includes/classes/Helper.php" />
+        <option value="$PROJECT_DIR$/includes/classes/Song.php" />
+        <option value="$PROJECT_DIR$/includes/header.php" />
+        <option value="$PROJECT_DIR$/includes/classes/Album.php" />
+        <option value="$PROJECT_DIR$/album.php" />
       </list>
     </option>
   </component>
@@ -152,16 +169,17 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="510" />
-    <option name="y" value="7" />
+    <option name="x" value="835" />
+    <option name="y" value="98" />
     <option name="width" value="1140" />
-    <option name="height" value="930" />
+    <option name="height" value="927" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -177,8 +195,13 @@
             <path>
               <item name="Spotify_clone" type="b2602c69:ProjectViewProjectNode" />
               <item name="Spotify_clone" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="includes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Spotify_clone" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Spotify_clone" type="462c0819:PsiDirectoryNode" />
+              <item name="includes" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Spotify_clone" type="b2602c69:ProjectViewProjectNode" />
@@ -189,7 +212,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -199,12 +221,13 @@
     <property name="settings.editor.selected.configurable" value="terminal" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\Spotify_clone" />
-      <recent name="C:\xampp\htdocs\Spotify_clone\assets\images" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\Spotify_clone\assets\css" />
+      <recent name="C:\xampp\htdocs\Spotify_clone\assets\images" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Spotify_clone\mysql" />
+      <recent name="C:\xampp\htdocs\Spotify_clone" />
       <recent name="C:\xampp\htdocs\Spotify_clone\assets\images" />
     </key>
   </component>
@@ -235,7 +258,11 @@
       <workItem from="1527412096645" duration="4719000" />
       <workItem from="1527444828766" duration="5291000" />
       <workItem from="1527521527641" duration="45000" />
-      <workItem from="1527616421505" duration="5860000" />
+      <workItem from="1527616421505" duration="6535000" />
+      <workItem from="1527693136021" duration="415000" />
+      <workItem from="1527877951522" duration="865000" />
+      <workItem from="1528825903269" duration="351000" />
+      <workItem from="1528826280268" duration="4777000" />
     </task>
     <task id="LOCAL-00001" summary="index.php refactor">
       <created>1527416219237</created>
@@ -251,36 +278,66 @@
       <option name="project" value="LOCAL" />
       <updated>1527621934554</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Db update">
+      <created>1527623467320</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1527623467320</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37678000" />
+    <option name="totallyTimeSpent" value="44761000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="668" y="79" width="912" height="741" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="7" weight="0.32923076" />
-      <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.46656534" />
-      <window_info anchor="bottom" id="Database Console" order="10" weight="0.32674772" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15683647" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.70124483" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
-      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.4075067" />
+      <window_info anchor="right" id="Database" order="3" weight="0.24941452" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Database Console" order="10" weight="0.32674772" />
       <window_info anchor="bottom" id="Find" order="1" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.33981234" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Database Changes" order="7" weight="0.32923076" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Database" order="3" weight="0.1689008" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.46656534" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Database Console" order="10" weight="0.32674772" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -293,7 +350,8 @@
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="index.php refactor" />
     <MESSAGE value="Album Artist and Helper class&#10;&#10;#note code getters for array properties" />
-    <option name="LAST_COMMIT_MESSAGE" value="Album Artist and Helper class&#10;&#10;#note code getters for array properties" />
+    <MESSAGE value="Db update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Db update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -301,9 +359,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/includes/handlers/register_handler.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/register.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1104">
@@ -343,9 +398,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="644">
           <caret line="28" column="51" selection-start-line="28" selection-start-column="51" selection-end-line="28" selection-end-column="51" />
-          <folding>
-            <element signature="e#6#89#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -503,20 +555,6 @@
     <entry file="file://$PROJECT_DIR$/includes/handlers/register_handler.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/register.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="48" column="91" selection-start-line="48" selection-start-column="91" selection-end-line="48" selection-end-column="91" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/classes/Helper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="445">
-          <caret line="26" column="28" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/includes/classes/Account.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-299">
@@ -527,34 +565,10 @@
     <entry file="file://$PROJECT_DIR$/includes/classes/Constants.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="22" column="48" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="48" />
-          <folding>
-            <element signature="e#6#89#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/classes/Album.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/includes/nowPlayingBarContainer.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="446">
           <caret line="74" column="6" selection-start-line="74" selection-start-column="6" selection-end-line="74" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/classes/Artist.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="22" column="63" lean-forward="true" selection-start-line="22" selection-start-column="63" selection-end-line="22" selection-end-column="63" />
         </state>
       </provider>
     </entry>
@@ -578,20 +592,48 @@
     <entry file="file://$PROJECT_DIR$/includes/footer.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-115">
-          <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
-          <folding>
-            <element signature="e#6#89#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/includes/config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysql/slotify.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+          <folding>
+            <element signature="e#631#843#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="252" column="22" selection-start-line="252" selection-start-column="22" selection-end-line="252" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="713">
+          <caret line="36" column="42" selection-start-line="36" selection-start-column="42" selection-end-line="36" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/classes/Artist.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/register.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-298">
+          <caret line="37" column="33" lean-forward="true" selection-start-line="37" selection-start-column="33" selection-end-line="37" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -602,24 +644,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/includes/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/classes/Song.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/classes/Album.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="34" column="89" selection-start-line="34" selection-start-column="89" selection-end-line="34" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/classes/Helper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="22" column="20" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/album.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="28" column="59" lean-forward="true" selection-start-line="28" selection-start-column="59" selection-end-line="28" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="445">
-          <caret line="252" column="22" selection-start-line="252" selection-start-column="22" selection-end-line="252" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysql/slotify.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="22" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+        <state relative-caret-position="285">
+          <caret line="53" column="74" selection-start-line="53" selection-start-column="74" selection-end-line="53" selection-end-column="74" />
         </state>
       </provider>
     </entry>

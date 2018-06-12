@@ -20,6 +20,10 @@ class Helper
         return $sql;
     }
 
+    public function queryDb($connection, $sql){
+        return mysqli_query($connection, $sql);
+    }
+
     public function fetchArrayFromDb ($connection, $sql){
             $query = mysqli_query($connection, $sql);
             $dbArray = mysqli_fetch_array($query);
