@@ -7,6 +7,8 @@
  */
 
 include("includes/config.php");
+
+//require "autoload.php";
 include("includes/classes/Helper.php");
 include("includes/classes/Album.php");
 include("includes/classes/Artist.php");
@@ -27,8 +29,14 @@ if (isset($_SESSION['userLoggedIn'])) {
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Welcome to Slotify!</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
 </head>
 <body>
+
 <div id="mainContainer">
 
     <?php include ("includes/navBarContainer.php")?>
