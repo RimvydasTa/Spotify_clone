@@ -23,6 +23,10 @@
         //Volume bar
         updateVolumeProgressBar(audioElement.audio);
 
+        $("#nowPlayingBarContainer").on("mousedown touchstart mousemove touchmove", function (e) {
+           e.preventDefault();
+        });
+
         $(".playbackBar .progressBar").mousedown(function () {
            mouseDown = true;
         });
@@ -57,6 +61,11 @@
             }
         });
 
+        $(".controlButton.volume").on("click", function () {
+            setMute();
+
+        });
+
         $(document).mouseup(function () {
            mouseDown = false;
         });
@@ -68,6 +77,19 @@
         $(".pause").on("click",function () {
             pauseSong();
         });
+
+        $(".next").on("click",function () {
+            nextSong();
+        });
+        $(".repeat").on("click",function () {
+            setRepeat();
+        });
+
+        $(".previous").on("click",function () {
+            prevSong();
+        });
+
+
     });
     
     function timeFromOffset(mouse, progressBar) {
@@ -76,6 +98,8 @@
         audioElement.setTime(seconds);
     }
     function setTrack(trackId, newPlaylist, play) {
+        currentIndex = currentPlaylist.indexOf(trackId);
+        pauseSong();
         $.post("includes/handlers/ajax/getSongJson.php", {songId: trackId}, function (data) {
             var track = JSON.parse(data);
             console.log(track);
@@ -115,6 +139,40 @@
         audioElement.pause();
         $(".pause").hide();
         $(".play").show();
+    }
+    function prevSong() {
+        if (audioElement.audio.currentTime >= 3 || currentIndex === 0){
+            audioElement.setTime(0);
+        }else {
+            currentIndex = currentIndex --;
+            setTrack(currentPlaylist[currentIndex], currentPlaylist, true);
+        }
+    }
+    function nextSong() {
+        if (repeat == true){
+            audioElement.setTime(0);
+            playSong();
+            return;
+        }
+        if (currentIndex === currentPlaylist.length - 1) {
+            currentIndex = 0;
+        }else {
+            currentIndex = currentIndex++;
+        }
+        var trackToPlay = currentPlaylist[currentIndex];
+        setTrack(trackToPlay, currentPlaylist, true);
+    }
+
+    function setRepeat() {
+        repeat = !repeat;
+        var imageName = repeat ? "repeat-active.png" : "repeat.png";
+        $(".controlButton.repeat img").attr("src", "assets/images/icons/" + imageName);
+    }
+
+    function setMute() {
+        audioElement.audio.muted = !audioElement.audio.muted;
+        var imageName = audioElement.audio.muted ? "volume-mute.png" : "volume.png";
+        $(".controlButton.volume img").attr("src", "assets/images/icons/" + imageName);
     }
 
 
